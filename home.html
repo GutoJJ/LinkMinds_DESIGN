@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style-home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navdentro">
+        <div id="nav-perfil">
+            <img src="./images/minhacara.svg" alt="">
+            <h1 id="nome-perfil">Augusto Jung</h1>
+        </div>
+        <div id="nav-imgs">
+            <a class = "nav-titles" href="home.html"><img src="./images/home.svg" alt="" class="navs">Home</a>
+            <a class = "nav-titles"href="home.html"><img src="./images/pesquisar.svg" alt="" class="navs">Pesquisar</a>
+            <a class = "nav-titles"href="home.html"><img src="./images/criar.svg" alt="" class="navs">Criar</a>
+            <a class = "nav-titles"href="home.html"><img src="./images/chats.svg" alt="" class="navs">Chats</a>
+            <a class = "nav-titles"href="home.html"><img src="./images/perfil.svg" alt="" class="navs">Perfil</a>
+        </div>
+    </div>
+    <div id="bodyfalso">
+        <nav>
+            <div id="botao">
+                <button id="btn-hamb" onclick="funcao_nav()"><img src="./images/hamburger.svg" alt="" id="hamb"></button>
+            </div>
+            <img src="./images/Logo.svg" alt="" id="logo">
+        </nav>
+        <div id="wrapper">
+            <h1 id="bv">Bem Vindo</h1>
+            <h1 id="nome">Augusto</h1>
+        </div>
+        <h1 id="posts-recomendados">Posts recomendados</h1>
+        <div id="posts">
+
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./images/minhacara.svg" alt="" class="pfp">
+                        <div class="textos-card">
+                            <p class="nome-card">Augusto</p>
+                            <p class="info">Quer jogar basquete as <span>9:45 do dia 29</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="participar">Participar</button>
+            </div>
+
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./images/minhacara.svg" alt="" class="pfp">
+                        <div class="textos-card">
+                            <p class="nome-card">Augusto</p>
+                            <p class="info">Quer jogar basquete as <span>9:45 do dia 29</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="participar">Participar</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
