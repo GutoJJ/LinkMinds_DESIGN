@@ -6,14 +6,13 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
-    background: url(./images/bgtop.svg), #181C22 0% 0% / 100px 100px repeat, #232931;
-    background-blend-mode: soft-light;
-    background-color: #181C22;
+    background: url(./images/bgtop.svg)#181C22;
     background-size: cover;
     background-size: 600%;
     background-position: 0% 0%;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
 }
 
 #wrapper{

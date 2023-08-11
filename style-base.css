@@ -1,0 +1,28 @@
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+body{
+    background: url(./images/bgtop.svg)#181C22;
+    background-size: cover;
+    background-size: 600%;
+    background-position: 0% 0%;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+}
+
+#bodyfalso{
+    align-self: center;
+    z-index: 1;
+    top: 0;
+    margin-right: 0%;
+    background: linear-gradient(180deg, #232931 0%, #181C22 100%) #232931;
+    width: 100vw;
+    height: fit-content;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), -8px 9px 27px 0px rgba(0, 0, 0, 0.10), -31px 38px 49px 0px rgba(0, 0, 0, 0.09), -70px 84px 66px 0px rgba(0, 0, 0, 0.05), -124px 150px 78px 0px rgba(0, 0, 0, 0.01), -194px 234px 85px 0px rgba(0, 0, 0, 0.00);
+}
