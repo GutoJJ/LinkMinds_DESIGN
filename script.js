@@ -17,6 +17,8 @@ let funcao_nav = () => {
         nav.style.visibility = "visible";
         nav.style.display = "flex";
         nav.style.animation = "fadeIn 0.3s ease-in-out";
+        nav.style.transition = "0.3s ease-in-out";
+        nav.style.marginLeft = "1rem";
         nav.style.opacity = "100%";
         flag = 1;
     }
@@ -33,6 +35,7 @@ bodyfalso.onclick = () => {
             bodyfalso.style.borderRadius = "";
             nav.style.display = "";
             nav.style.opacity = "0%";
+            nav.style.marginLeft = "";
             setTimeout(function(){
                 nav.style.visibility = "";
                 bodyfalso.style.height = "";

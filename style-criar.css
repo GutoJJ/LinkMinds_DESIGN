@@ -11,3 +11,41 @@
 main{
     margin-top: 3.1rem;
 }
+
+.inp-header{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.875rem;
+
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0.8rem;
+}
+
+.inp-criar{
+    width: 22rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 3px solid #4ECCA3;
+    background: #232931;
+    margin-bottom: 0.5rem;
+    outline: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.inp-criar::placeholder{
+    color: rgba(255, 255, 255, 0.12);
+    font-size: 1rem;
+    align-self: center;
+    line-height: 3.75rem;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
