@@ -8,13 +8,15 @@ let aux = 0;
 let funcao_nav = () => {
     if(flag === 0){
         console.log("abrindo");
-        bodyfalso.style.height = "95vh"
         bodyfalso.style.marginRight = "-55%";
         bodyfalso.style.scale = "85%";
+        bodyfalso.style.height = "95vh";
         bodyfalso.style.borderRadius = "35px";
-        bodyfalso.style.transition = "0.5s ease-in-out";
+        bodyfalso.style.transition = "0.3s ease-in-out";
+        bodyfalso.style.boxShadow = "0px 0px 0px 0px rgba(78, 204, 163, 0.13), -13px 9px 35px 0px rgba(78, 204, 163, 0.13), -51px 38px 64px 0px rgba(78, 204, 163, 0.11), -116px 85px 86px 0px rgba(78, 204, 163, 0.07), -206px 152px 102px 0px rgba(78, 204, 163, 0.02), -322px 237px 112px 0px rgba(78, 204, 163, 0.00)"
+        nav.style.visibility = "visible";
         nav.style.display = "flex";
-        nav.style.animation = "fadeIn 0.5s ease-in-out";
+        nav.style.animation = "fadeIn 0.3s ease-in-out";
         nav.style.opacity = "100%";
         flag = 1;
     }
@@ -23,15 +25,18 @@ let funcao_nav = () => {
 bodyfalso.onclick = () => {
     if(flag === 1 && aux === 1){
         flag = 0;
-        nav.style.animation = "fadeOut 0.5s ease-in-out";
+        nav.style.animation = "fadeOut 0.3s ease-in-out";
         setTimeout(function() {
-            bodyfalso.style.transition = "0.5s ease-in-out";
-            bodyfalso.style.height = "";
+            bodyfalso.style.boxShadow = "";
             bodyfalso.style.scale = ""; 
             bodyfalso.style.marginRight = "";
             bodyfalso.style.borderRadius = "";
             nav.style.display = "";
             nav.style.opacity = "0%";
+            setTimeout(function(){
+                nav.style.visibility = "";
+                bodyfalso.style.height = "";
+            }, 500);
             aux=0;
           }, 100);
         
@@ -41,3 +46,24 @@ bodyfalso.onclick = () => {
     }
 }
 
+let isSwiping = false;
+const navbar = document.getElementById('navbar');
+
+function handleSwipeRight(event) {
+  if (isSwiping) {
+    return;
+  }
+  isSwiping = true;
+  const touch = event.changedTouches[0];
+  const navbarWidth = navbar.offsetWidth; 
+  const touchAreaWidth = 1000; // largura
+  const minHorizontalSwipe = 30;
+  if (touch.pageX > navbarWidth - touchAreaWidth &&
+      touch.pageX - touch.clientX < minHorizontalSwipe) {
+    btn_hamb.click();
+  }
+  setTimeout(() => {
+    isSwiping = false;
+  }, 750);
+}
+navbar.addEventListener('touchmove', handleSwipeRight);

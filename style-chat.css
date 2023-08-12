@@ -1,0 +1,91 @@
+#bodyfalso{
+    background: #181C22;
+}
+
+main{
+    margin-top: 6rem;
+}
+
+.card-chat{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.chat-top{
+    background: #232931;
+    width: 23.375rem;
+    height: 6.875rem;
+    border-radius: 1.25rem;
+    display: flex;
+}
+
+.chat-text{
+    flex-direction: column;
+    margin-left: -2rem;
+}
+
+.chat-btn{
+    margin-top: -0.7rem;
+    color: #181C22;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 23.375rem;
+    height: 2.5625rem;
+    border-radius: 1.28125rem;
+    background: #4ECCA3;
+    border: 0;
+}
+
+.chat-title{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.texto{
+    margin-top: -0.2rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.verde{
+    color: #4ECCA3;
+}
+
+.chat-img{
+    margin-left: 0;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+    background-image: url(./images/fundo-card.svg);
+    background-position: center;
+    background-size: cover;
+    width: 6.313rem;
+    height: 6.88113rem;
+}
+
+.participantes{
+    margin-top: -0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.participantes img, span{
+    margin-left: 0;
+}
+
+.participantes img{
+    width: 2.08325rem;
+    margin-right: 0;
+    left:0;
+}
