@@ -1,7 +1,7 @@
 *{
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-
+    overflow-x: hidden;
     
 }
 
@@ -25,9 +25,10 @@ body{
 }
 
 #logo{
+    
     margin-top: 45%;
-    width: 22rem;
-height: 6rem;
+    width: 20rem;
+    height: 6rem;
 }
 
 #container{

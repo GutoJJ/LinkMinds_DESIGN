@@ -11,6 +11,7 @@ html{
 body{
     background: url(./images/bgtop.svg), 100px 100px repeat, #6cb2b2;
     background-blend-mode:hard-light;
+    background-position: 30% 30%;
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -26,7 +27,7 @@ body{
 }
 
 nav{
-    width: 100%;
+    width: 100vw;
     height: 4.1875rem;
     background: #232931;
     position: fixed;

@@ -2,6 +2,7 @@ let btn_hamb = document.getElementById("btn-hamb");
 let bodyfalso = document.getElementById("bodyfalso");
 let nav = document.getElementById("navdentro");
 
+
 let flag = 0;
 let aux = 0;
 
@@ -13,11 +14,13 @@ let funcao_nav = () => {
         bodyfalso.style.height = "95vh";
         bodyfalso.style.borderRadius = "35px";
         bodyfalso.style.transition = "0.3s ease-in-out";
+        document.body.style.transition = "25s";
+        document.body.style.backgroundPosition = "0% 0%";
         bodyfalso.style.boxShadow = "0px 0px 0px 0px rgba(78, 204, 163, 0.13), -13px 9px 35px 0px rgba(78, 204, 163, 0.13), -51px 38px 64px 0px rgba(78, 204, 163, 0.11), -116px 85px 86px 0px rgba(78, 204, 163, 0.07), -206px 152px 102px 0px rgba(78, 204, 163, 0.02), -322px 237px 112px 0px rgba(78, 204, 163, 0.00)"
         nav.style.visibility = "visible";
         nav.style.display = "flex";
         nav.style.animation = "fadeIn 0.3s ease-in-out";
-        nav.style.transition = "0.3s ease-in-out";
+        nav.style.transition = "0.35s ease-in-out";
         nav.style.marginLeft = "1rem";
         nav.style.opacity = "100%";
         flag = 1;
@@ -39,6 +42,8 @@ bodyfalso.onclick = () => {
             setTimeout(function(){
                 nav.style.visibility = "";
                 bodyfalso.style.height = "";
+                document.body.style.backgroundPosition = "";
+                document.body.style.transition = "0s";
             }, 500);
             aux=0;
           }, 100);

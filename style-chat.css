@@ -14,7 +14,7 @@ main{
 
 .chat-top{
     background: #232931;
-    width: 23.375rem;
+    width: 95%;
     height: 6.875rem;
     border-radius: 1.25rem;
     display: flex;
@@ -33,7 +33,7 @@ main{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 23.375rem;
+    width: 95%;
     height: 2.5625rem;
     border-radius: 1.28125rem;
     background: #4ECCA3;
