@@ -8,7 +8,10 @@ main{
 .img-perfil{
     width: 100%;
     height: 24.0625rem;
-    object-fit: cover;
+    background: url(./images/minhacara.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .conteudo{
     z-index: 1;
