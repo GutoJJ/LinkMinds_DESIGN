@@ -14,13 +14,13 @@ let funcao_nav = () => {
         bodyfalso.style.height = "95vh";
         bodyfalso.style.borderRadius = "35px";
         bodyfalso.style.transition = "0.3s ease-in-out";
-        document.body.style.transition = "25s";
+        document.body.style.transition = "45.5s";
         document.body.style.backgroundPosition = "0% 0%";
         bodyfalso.style.boxShadow = "0px 0px 0px 0px rgba(78, 204, 163, 0.13), -13px 9px 35px 0px rgba(78, 204, 163, 0.13), -51px 38px 64px 0px rgba(78, 204, 163, 0.11), -116px 85px 86px 0px rgba(78, 204, 163, 0.07), -206px 152px 102px 0px rgba(78, 204, 163, 0.02), -322px 237px 112px 0px rgba(78, 204, 163, 0.00)"
         nav.style.visibility = "visible";
         nav.style.display = "flex";
         nav.style.animation = "fadeIn 0.3s ease-in-out";
-        nav.style.transition = "0.35s ease-in-out";
+        nav.style.transition = "0.3s ease-in-out";
         nav.style.marginLeft = "1rem";
         nav.style.opacity = "100%";
         flag = 1;
@@ -75,3 +75,17 @@ function handleSwipeRight(event) {
   }, 750);
 }
 navbar.addEventListener('touchmove', handleSwipeRight);
+
+// ================================================================================================================================================
+
+let editando_aux = 0;
+
+let editando = () =>{
+  if(editando_aux === 0){
+    console.log("editando");
+    editando_aux = 1;
+  } else{
+    console.log("salvando");
+    editando_aux = 0;
+  }
+}

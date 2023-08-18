@@ -11,10 +11,15 @@ html{
 body{
     background: url(./images/bgtop.svg), 100px 100px repeat, #6cb2b2;
     background-blend-mode:hard-light;
-    background-position: 30% 30%;
+    background-position: 35% 35%;
     width: 100vw;
     height: fit-content;
     display: flex;
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+    display: none !important;
 }
 
 #bodyfalso{
@@ -27,6 +32,7 @@ body{
 }
 
 nav{
+    z-index: 50000;
     width: 100vw;
     height: 4.1875rem;
     background: #232931;
@@ -46,13 +52,19 @@ nav{
     margin-right: 0;
     display: flex;
     align-items: center;
+    
 }
 
-#btn-hamb, #hamb{
-    height: 91%;
+#btn-hamb{
+    height: 100%;
     background: none;
     outline: none;
     border: 0;
+    cursor: pointer;
+}
+
+#hamb{
+    height: 90%;
 }
 
 #navdentro{
@@ -82,7 +94,7 @@ nav{
 #nav-perfil img{
     width: 5.3125rem;
     border-radius: 100%;
-    
+    object-fit: cover;
 }
 
 #nome-perfil{
@@ -139,6 +151,7 @@ nav{
     line-height: normal;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav-titles img{

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style-base.css">
+    <link rel="stylesheet" href="style-perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="navdentro">
+        <div id="nav-perfil">
+            <img src="./images/minhacara.svg" alt="">
+            <h1 id="nome-perfil">Augusto Jung</h1>
+        </div>
+        <div id="nav-imgs">
+            <a class = "nav-titles" href="home.html"><img src="./images/home.svg" alt="" class="navs">Home</a>
+            <a class = "nav-titles"href="home.html"><img src="./images/pesquisar.svg" alt="" class="navs">Pesquisar</a>
+            <a class = "nav-titles"href="criar.html"><img src="./images/criar.svg" alt="" class="navs">Criar</a>
+            <a class = "nav-titles"href="chat.html"><img src="./images/chats.svg" alt="" class="navs">Chats</a>
+            <a class = "nav-titles"href="perfil.html"><img src="./images/perfil.svg" alt="" class="navs">Perfil</a>
+        </div>
+    </div>
+
+    <div id="bodyfalso">
+        <nav id="navbar">
+            <div id="botao">
+                <button id="btn-hamb" onclick="funcao_nav()"><img src="./images/hamburger.svg" alt="" id="hamb"></button>
+            </div>
+            <img src="./images/lgo2.svg" alt="" id="logo">
+        </nav>
+        <MAIN>
+
+            <img src="/images/minhacara.svg" alt="" class="img-perfil">
+            <section class="conteudo">
+                <div class="top-perfil">
+                    <h1 class="nome-perfil">Augusto</h1>
+                    <h2 class="idade-perfil">18 Anos</h2>
+                </div>
+            </section>
+            <section class="bio">
+                <h1 class="bio-header">Bio</h1>
+                <h1 class="bio-text"><span class="verde">"</span>Um passo de cada vez, rumo ao meu melhor eu.<span class="verde">"</span></h1>
+            </section>
+            <div class="btn-editar" onclick="editando()">
+                <img src="./images/editar.svg" alt="">
+                <div class="btn">Editar Perfil</div>
+            </div>
+            <section class="meus-interesses">
+                <h1 class="inter-header">Meus Interesses</h1>
+                <div class="interesse-card">
+                    <p class="inter-title">Basquete</p>
+                </div>
+                <div class="interesse-card">
+                    <p class="inter-title">Basquete</p>
+                </div>
+            </section>
+            <section class="meus-posts">
+                <h1 class="post-header">Meus Posts</h1>
+                <div class="posts-main">
+
+                    <div class="post-card">
+                        <div class="post-top">
+                            <div class="img-post"></div>
+                            <div class="post-text">
+                               <h1 class="post-title">Basquete</h1> 
+                               <p class="post-dia">Dia 21</p>
+                            </div>
+                            
+                        </div>
+                        <button class = "btn-detalhe">Ver detalhes</button>
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-top">
+                            <div class="img-post"></div>
+                            <div class="post-text">
+                               <h1 class="post-title">Basquete</h1> 
+                               <p class="post-dia">Dia 21</p>
+                            </div>
+                            
+                        </div>
+                        <button class = "btn-detalhe">Ver detalhes</button>
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-top">
+                            <div class="img-post"></div>
+                            <div class="post-text">
+                               <h1 class="post-title">Basquete</h1> 
+                               <p class="post-dia">Dia 21</p>
+                            </div>
+                            
+                        </div>
+                        <button class = "btn-detalhe">Ver detalhes</button>
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-top">
+                            <div class="img-post"></div>
+                            <div class="post-text">
+                               <h1 class="post-title">Basquete</h1> 
+                               <p class="post-dia">Dia 21</p>
+                            </div>
+                            
+                        </div>
+                        <button class = "btn-detalhe">Ver detalhes</button>
+                    </div>
+
+                </div>
+            </section>
+        </MAIN>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
