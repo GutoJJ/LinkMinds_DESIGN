@@ -75,17 +75,3 @@ function handleSwipeRight(event) {
   }, 750);
 }
 navbar.addEventListener('touchmove', handleSwipeRight);
-
-// ================================================================================================================================================
-
-let editando_aux = 0;
-
-let editando = () =>{
-  if(editando_aux === 0){
-    console.log("editando");
-    editando_aux = 1;
-  } else{
-    console.log("salvando");
-    editando_aux = 0;
-  }
-}

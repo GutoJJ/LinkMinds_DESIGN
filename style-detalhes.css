@@ -1,0 +1,67 @@
+main{
+    margin-top: 6rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img-detalhes{
+    width: 22.5rem;
+    height: 22.5rem;
+    border-radius: 1.875rem;
+    object-fit: cover;
+    box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-title-detalhes{
+    color: #4ECCA3;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -2.5rem;
+}
+
+.detalhes-container{
+    width: 22.5rem;
+    min-height: 18.875rem;
+    border-radius: 2.4375rem;
+    background: #232931;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-detalhes{
+    width: 100%;
+    display: flex;
+    font-size: 0.6rem; 
+}
+
+.top-text-detalhes{
+    margin-top: 0.5rem;
+    color: #fff;
+    margin-left: 0;
+    
+}
+
+.foto{
+    width: 4.375rem;
+    height: 4.375rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 100%;
+}
+
+.criado span{
+    text-decoration: 3px underline;
+    text-decoration-color: #4ECCA3;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+
+
