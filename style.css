@@ -46,4 +46,6 @@ body{
     font-style: italic;
     font-weight: 700;
     text-decoration: none;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
