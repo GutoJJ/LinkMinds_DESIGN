@@ -1,14 +1,14 @@
 
 #wrapper{
     width: 100%;
-    margin-top: 4.1875rem;
+    margin-top: 4vh;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
 #bv{
-    color: rgba(78, 204, 163, 0.54);
+    color: #ffffff7e;
     font-family: Poppins;
     font-size: 3rem;
     font-style: italic;
@@ -45,6 +45,7 @@
 
 .card{
     height: 22.6875rem;
+    width: 95%;
     background: url(./images/fundo-card.svg);
     background-size: cover;
     background-position: center;
@@ -55,7 +56,6 @@
     border-radius: 2.28125rem 2.28125rem 0 0;
     width: 100%;
     min-height: 4.5625rem;
-    border-bottom: 3px solid #4ECCA3;
     background: #232931;
     display: flex;
     gap: 0;
@@ -108,7 +108,6 @@ span{
     align-items: center;
     border-radius: 1.5625rem;
     background: #4ECCA3;
-    box-shadow: 0px 0px 15px 0px rgba(78, 204, 163, 0.50);
     border: 0;
     margin-top: -1.5rem;
     width: 16rem;

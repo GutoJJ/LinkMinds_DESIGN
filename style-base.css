@@ -7,11 +7,12 @@
 html{
     scroll-behavior: smooth;
     width: 100vw;
-overflow-x: clip;
+    overflow-x: clip;
+    background: #0A0D10;
 }
 
 body{
-    background: #181d22;
+    background: linear-gradient(221deg, #232931 -0.32%, #181D22 57.41%);
     background-position: center;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -19,7 +20,6 @@ body{
     display: flex;
     width: 100vw;
     align-items: flex-start;
-    
 }
 
 ::-webkit-scrollbar{
@@ -32,7 +32,7 @@ body{
     z-index: 1;
     top: 0;
     margin-right: 0%;
-    background: linear-gradient(180deg, #232931 0%, #181C22 100%) #232931;
+    background: linear-gradient(221deg, #232931 -0.32%, #181D22 57.41%);
     width: 100vw;
     min-height: 100vh;
 }
@@ -57,15 +57,25 @@ nav{
     margin-right: 0;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 #btn-hamb{
-    height: 100%;
+    height: 80%;
     background: none;
     outline: none;
     border: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 15px;
+    transition: .2s;
+}
+
+#btn-hamb:hover{
+    transform: scale(1.05);
 }
 
 #hamb{
@@ -80,7 +90,7 @@ nav{
     display: none;
     visibility: hidden;
     opacity: 0%;
-    
+     width: 50vw;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -89,24 +99,22 @@ nav{
 
 #nav-perfil{
     width: 100%;
-
+    box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.10), 0px 40px 40px 0px rgba(0, 0, 0, 0.09), 0px 90px 54px 0px rgba(0, 0, 0, 0.05), 0px 159px 64px 0px rgba(0, 0, 0, 0.01), 0px 249px 70px 0px rgba(0, 0, 0, 0.00);
     border-radius: 10px;
     margin-bottom: 2vh;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 15px;
     height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #20252cce;
+    background: #2329314a;
     gap: .2vw;
     /* border-bottom: 3px solid #232931 ; */
-    margin-left: -3px;
 }
 
 #nav-perfil img{
-    width: 3.5rem;
+    width: 5rem;
     aspect-ratio: 1/1;
     border-radius: 100%;
     object-fit: cover;
@@ -156,10 +164,11 @@ nav{
     align-items: center;
     gap: 1rem;
     padding-bottom: 5vh;
+    width: 100%;
 }
 
 .nav-titles{
-    width: 50vw;
+    width: 100%;
     overflow-x: visible;
     text-decoration: none;
     color: #FFF;
@@ -193,4 +202,11 @@ nav{
     margin: 0;
     width: 32px;
     aspect-ratio: 1/1;
+}
+
+.title-local{
+    color: #fff;
+    margin-left: 5vw;
+    line-height: 4.1875rem;
+    color: #4ECCA3;
 }

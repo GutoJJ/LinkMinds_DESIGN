@@ -37,8 +37,8 @@ bodyfalso.onclick = () => {
             nav.style.opacity = "0%";
             nav.style.marginLeft = "";
             setTimeout(function(){
-                nav.style.visibility = "";
-                bodyfalso.style.height = "";
+                nav.style = "";
+                bodyfalso.style = "";
             }, 500);
             aux=0;
           }, 100);
